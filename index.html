@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - log in or sign up</title>
+    <style>
+        body {
+            background-color: rgb(250, 250, 250);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            display: block;
+
+        }
+
+        #logo {
+            font-size: 60px;
+            font-weight: bold;
+            color: rgb(39, 122, 223);
+        }
+
+        #slogan {
+            font-family: 'SFProDisplay-Regular', 'Helvetica', 'Arial', 'sans-serif';
+            /* float: left; */
+            line-height: 30px;
+            font-size: 28px;
+            width: 500px;
+        }
+
+        form {
+            border: solid grey 1px;
+            border-radius: 5px;
+            background-color: white;
+            display: block;
+            position: absolute;
+            left: 900px;
+            top: 135px;
+            width: 200px;
+        }
+
+        #create {
+            padding: 10px;
+            width: 400px;
+            box-sizing: border-box;
+            margin: 50px 50px;
+        }
+
+        .grp {
+            padding: 10px;
+            margin: 5px;
+            margin-left: 16px;
+            text-align: left;
+            height: 25px;
+            width: 325px;
+            background-color: white;
+            border-radius: 5px;
+            font-size: 18px;
+
+        }
+
+        .grp:focus {
+            border-color: rgb(39, 122, 223);
+        }
+
+        #logInBtn {
+            margin: 5px;
+            height: 50px;
+            width: 350px;
+            background-color: rgb(39, 122, 223);
+            color: white;
+            border-radius: 5px;
+            margin-left: 16px;
+            font-size: large;
+            font-weight: bolder;
+            cursor: pointer;
+
+        }
+
+        form a {
+            text-decoration: none;
+            display: inline-block;
+            background: none;
+            align-self: auto;
+            font-size: 20px;
+            margin: 5px 0px 0px 116px;
+        }
+
+        form p {
+            color: lightgray;
+            margin: 0px 3px 5px 18px;
+        }
+
+        #pass {
+            /* border: 2px black solid; */
+            position: relative;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            top: 500px;
+            left: 985px;
+        }
+
+        #pass a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        #pass a:hover,
+        form a:hover {
+            text-decoration-line: underline;
+        }
+
+        #createBtn {
+            margin: 5px;
+            height: 50px;
+            width: 220px;
+            background-color: rgb(79, 199, 79);
+            color: white;
+            border-radius: 5px;
+            margin-left: 85px;
+            font-size: large;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        #logInBtn:hover {
+            background-color: rgb(15, 96, 202);
+        }
+
+        #createBtn:hover {
+            background-color: rgb(27, 131, 27);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">facebook</div>
+        <div id="slogan">Facebook helps you connect and share with the people in your life.</div>
+    </header>
+    <form action="none" id="create">
+        <input type="text" class="grp" placeholder="Email adress or Phone number">
+        <input type="password" class="grp" placeholder="Password">
+        <button id="logInBtn" type="button">Log In</button>
+        <a href="#">forgotten Password?</a>
+        <p>___________________________________________</p>
+        <button id="createBtn">Create account</button>
+    </form>
+    <p id="pass">
+        <a href="#">Create a Page</a>
+        for a celebrity, band or business
+    </p>
+</body>
+
+</html>
